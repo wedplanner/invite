@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <style>
+      body{
+      font-family: "Georgia";
+      }
+      </style>
+    </head>
+  <body>
+
+      <img class="img-responsive" src="invitation_jess.jpeg" alt="Invitation">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8">
+<div class="container">
+  <h1 style="color:#22344E;" class="text-center"><strong>RSVP</strong></h1>
+  <p class="text-center">Please respond before march 10th</p>
+</div>
+
+<form class="form-horizontal" action="https://europe-west6-boda-373817.cloudfunctions.net/function-1" method="post">
+  <label class="radio-inline" style="color:#22344E;"><input type="radio" name="accept"><strong>Gratefully accept</strong></label>
+  <label class="radio-inline" style="color:#22344E;"><input type="radio" name="decline"><strong>Regratefully decline</strong></label>
+<br><br>
+<div class="form-group">
+  <label class="control-label col-sm-2" style="color:#22344E;" for="number">Guests:</label>
+  <div class="col-sm-10">
+    <input type="number" class="form-control" id="number" name="number" placeholder="Enter number of guests">
+  </div>
+  <label class="control-label col-sm-2" for="names"></label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="names" name="names" placeholder="Enter Name(s) of guest(s)">
+  </div>
+</div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" style="color:#22344E;" for="email">Contact info:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+    <label class="control-label col-sm-2" for="phone"></label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+    </div>
+  </div>
+
+
+  <t3>If you are coming from out the country and you require help with your transport
+    from the airport or a place to stay for a couple days let us know by
+    cheking the following boxes.</t3><br>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox" name="transport"> Transportation</label>
+      </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="logement"> Logement</label>
+    </div>
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+      </div>
+</div>
+<img class="img-responsive" src="footer.jpeg" alt="none">
+</body>
+</html>
